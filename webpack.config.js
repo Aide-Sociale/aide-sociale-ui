@@ -92,8 +92,8 @@ var config = {
             'Access-Control-Allow-Origin': '*',
         },
         contentBase: path.join(__dirname, 'dist'),
-        port: webpackDevServerPort
-    },
+        port: webpackDevServerPort,
+	disableHostCheck:true    },
     plugins: [
         new CopyWebpackPlugin([
             { from: 'app/documents', to: 'documents/' },
@@ -165,7 +165,7 @@ module.exports = function(env, argv) {
     if (argv.mode === 'development') {
         htmlWebpackPluginConfigs = htmlWebpackPluginConfigs.map(function(htmlWebpackPluginConfig) {
             return Object.assign(htmlWebpackPluginConfig, {
-                devServer: 'http://localhost:' + webpackDevServerPort
+                devServer: 'http://163.172.111.68:' + webpackDevServerPort
             });
         });
     }

@@ -25,10 +25,10 @@ if (useProductionAssets) {
 
   files = [
     // Serve files from Webpack DevServer
-    'http://localhost:' + port + '/js/vendors~scripts~scripts.recapSituation.js',
-    'http://localhost:' + port + '/js/vendors~scripts.js',
-    'http://localhost:' + port + '/js/scripts~scripts.recapSituation.js',
-    'http://localhost:' + port + '/js/scripts.js',
+    'http://127.0.0.1:' + port + '/js/vendors~scripts~scripts.recapSituation.js',
+    'http://127.0.0.1:' + port + '/js/vendors~scripts.js',
+    'http://127.0.0.1:' + port + '/js/scripts~scripts.recapSituation.js',
+    'http://127.0.0.1:' + port + '/js/scripts.js',
   ];
 }
 

@@ -13,7 +13,7 @@ defaults: &defaults
     - image: mongo:3.2.18
   environment:
     SAUCE_USERNAME: mes-aides-bot
-    OPENFISCA_BIND_HOST: 127.0.0.1:2000
+    OPENFISCA_BIND_HOST:sd-124918.dedibox.fr:5000
     LC_ALL: C.UTF-8
     LANG: C.UTF-8
     PUPPETEER_ARGS: '{"args":["--no-sandbox","--disable-dev-shm-usage"]}'
