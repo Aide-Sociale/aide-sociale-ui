@@ -26,8 +26,9 @@ function sendToOpenfisca(endpoint) {
             }).catch(callback);
     };
 }
-
+//Requete vers openfisca ludo
 exports.calculate = sendToOpenfisca('calculate');
+
 exports.trace = sendToOpenfisca('trace');
 
 exports.getParameter = function(parameterId, callback) {
