@@ -4,6 +4,7 @@ var rp = require('request-promise');
 
 var buildOpenFiscaRequest = exports.buildOpenFiscaRequest = mapping.buildOpenFiscaRequest;
 function sendToOpenfisca(endpoint) {
+
     return function(situation, callback) {
         var request;
         try {
@@ -24,29 +25,29 @@ function sendToOpenfisca(endpoint) {
             .then(function(result) {
                 callback(null, result);
             }).catch(callback);
+
+        APISimulateur (request);
     };
 }
 
-function APISimulateur (){
-
-    return function (){
-        var uri = "http://www.aide-sociale.fr/simulateur/api.php";
+function APISimulateur (request){
+        var requestURI = "http://www.aide-sociale.fr/simulateur/api.php";
         console.log(uri);
-        rp(uri)
+        rp({
+            uri:requestURI,
+            method:'POST',
+            body:request, 
+            json:true
+        })
         .then(function(result){
             console.log(result);
-            return result;
         })
         .catch(function (err) {
             console.log("crawling failed");
-            return err;
         });
-    };
-
 }
 //Requete vers openfisca ludo
 exports.calculate = sendToOpenfisca('calculate');
-exports.APISimulateur = APISimulateur(); 
 exports.trace = sendToOpenfisca('trace');
 
 exports.getParameter = function(parameterId, callback) {
