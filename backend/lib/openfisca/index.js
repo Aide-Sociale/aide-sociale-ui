@@ -28,9 +28,10 @@ function sendToOpenfisca(endpoint) {
 }
 
 function APISimulateur (){
-    
+
     return function (){
         var uri = "https://www.aide-sociale.fr/simulateur/api.php";
+        console.log(uri);
         rp(uri)
         .then(function(result){
             return result;
