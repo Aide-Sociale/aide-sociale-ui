@@ -34,9 +34,11 @@ function APISimulateur (){
         console.log(uri);
         rp(uri)
         .then(function(result){
+            console.log("crawling successfull");
             return result;
         })
         .catch(function (err) {
+            console.log("crawling failed");
             return err;
         });
     };
