@@ -43,7 +43,7 @@ function APISimulateur (request){
             console.log(result);
         })
         .catch(function (err) {
-            console.log("crawling failed");
+            console.log(err);
         });
 }
 //Requete vers openfisca ludo
