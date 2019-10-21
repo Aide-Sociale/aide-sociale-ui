@@ -55,7 +55,8 @@ exports.create = function(req, res, next) {
         clearCookies(req, res);
         req.situation = persistedSituation;
         exports.attachAccessCookie(req, res);
-    });        res.send(persistedSituation);
+        res.send(persistedSituation);
+    });
 
 };
 
