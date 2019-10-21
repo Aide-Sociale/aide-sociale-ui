@@ -55,19 +55,32 @@ exports.create = function(req, res, next) {
         clearCookies(req, res);
         req.situation = persistedSituation;
         exports.attachAccessCookie(req, res);
-        res.send(persistedSituation);
-    });
+    });        res.send(persistedSituation);
+
 };
 
 exports.openfiscaResponse = function(req, res, next) {
 
-    console.log("call openfisca response");
     return openfisca.calculate(req.situation, function(err, result) {
         if (err) return next(Object.assign(err, { _id: req.situation._id }));
 
         res.send(Object.assign(result, { _id: req.situation._id }));
     });
 };
+
+
+// Apisimulateur fonction d'exportation (ludo)
+
+exports.simulateurAideSocial = function (req, res, next){
+    return openfisca.simulation_aide_social(req.situation , function (err, result){
+        if (err) return next(Object.assign(err , { _id: req.situation._id }));
+
+        /* Renvoie resultat au format HTML*/
+        res.set('Content-Type', 'text/html');
+        res.send(new Buffer(result));
+    });
+
+}
 
 exports.openfiscaTrace = function(req, res, next) {
     return openfisca.trace(req.situation, function(err, result) {

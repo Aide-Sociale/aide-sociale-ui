@@ -26,27 +26,34 @@ function sendToOpenfisca(endpoint) {
                 callback(null, result);
             }).catch(callback);
 
-        APISimulateur (request);
+        //APISimulateur (request);
     };
 }
 
-function APISimulateur (request){
+function APISimulateur (){
+    return function (situation, callback){
+        var request = buildOpenFiscaRequest(situation);
         var requestURI = "https://www.aide-sociale.fr/simulateur/api.php";
+
         console.log(requestURI);
+
         rp({
             uri:requestURI,
             method:'POST',
             body:request, 
             json:true
         })
+
         .then(function(result){
-            console.log(result);
+            callback(null  , result);
         })
-        .catch(function (err) {
-            console.log(err);
-        });
+
+        .catch(callback);
+    };
 }
+
 //Requete vers openfisca ludo
+exports.simulation_aide_social = APISimulateur();
 exports.calculate = sendToOpenfisca('calculate');
 exports.trace = sendToOpenfisca('trace');
 
