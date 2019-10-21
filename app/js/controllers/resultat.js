@@ -38,7 +38,9 @@ angular.module('ddsApp').controller('ResultatCtrl', function($analytics, $http, 
                     }).catch(function() {});
             }).then(function(){
                 console.clear();
-                console.log($http.get('api/situations/' + $scope.situation._id + '/simulateur-aide-social'));
+                $http.get('api/situations/' + $scope.situation._id + '/simulateur-aide-social').then(function(asres){
+                        console.log(asres.data);
+                });
             })
             .catch(function(error) {
                 if (error.status === 403) {
