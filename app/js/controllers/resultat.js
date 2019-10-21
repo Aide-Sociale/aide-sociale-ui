@@ -36,6 +36,8 @@ angular.module('ddsApp').controller('ResultatCtrl', function($analytics, $http, 
                     .then(function(data) {
                         $scope.openfiscaTracerURL = data.destination.url;
                     }).catch(function() {});
+            }).then(function(){
+                console.log($scope.situation._id);
             })
             .catch(function(error) {
                 if (error.status === 403) {
