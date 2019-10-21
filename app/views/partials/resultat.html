@@ -50,7 +50,8 @@ Erreur : {{ encodedError }}
     </p>
     <droit-eligibles-list droits="droits"></droit-eligibles-list>
   </div>
-  <div> {{aide_sociale_fr}}</div>
+  <div innerHTML="{{aide_sociale_fr}}"></div>
+  
   <div ng-if="! (droitsNonEligibles | isEmpty)" ng-show="droitsNonEligiblesShow">
     <p>
       Les conditions des aides suivantes <strong>ne sont pas</strong> remplies :
