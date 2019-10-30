@@ -8,6 +8,12 @@ function sendToOpenfisca(endpoint) {
     return function(situation, callback) {
 
         var request;
+
+        situation.individus.forEach(function(individu) {   
+            console.log(individu);
+            delete individu.permis_de_conduire;
+        });
+
         try {
             request = buildOpenFiscaRequest(situation);
         } catch(e) {
