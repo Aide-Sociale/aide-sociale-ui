@@ -21,7 +21,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
         }, false),
     };
 
-    $scope.permis_de_conduire = false;
+    $scope.permis_de_conduire = 0;
 
     function parentsPayPensionsAlimentairesUpdated() {
 
@@ -42,17 +42,24 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     $scope.$watch('locals.parentsPayPensionsAlimentaires', parentsPayPensionsAlimentairesUpdated);
     
     $scope.$watch('permis_de_conduire', function(){
-        console.log('-----');
-        console.log($scope.permis_de_conduire);
-        console.log('-----');
+
         if($scope.permis_de_conduire){
             $scope.individus.forEach(function(individu) {
-                individu['permis_de_conduire'] = true;
+                demandeur['permis_de_conduire'] = 1;
+
+                console.log('-----');
+                console.log($scope.permis_de_conduire);
+                console.log('-----');
             });
             return ;
         }else {
             $scope.individus.forEach(function(individu) {
-                individu['permis_de_conduire'] = false;
+
+                console.log('-----');
+                console.log($scope.permis_de_conduire);
+                console.log('-----');
+
+                demandeur['permis_de_conduire'] = 0;
             });
         }
     });
