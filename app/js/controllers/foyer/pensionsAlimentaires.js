@@ -40,6 +40,16 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     $scope._parentsPayPensionsAlimentairesUpdated = parentsPayPensionsAlimentairesUpdated; // exported for testing
 
     $scope.$watch('locals.parentsPayPensionsAlimentaires', parentsPayPensionsAlimentairesUpdated);
+    
+    $scope.$watch('permis_de_conduire', function(){
+        if($scope.permis_de_conduire){
+            $scope.individus.forEach(function(individu) {
+                individu.permis_de_conduire = true;
+            });
+            return ;
+        }
+    });
+
 
     $scope.submit = function(form) {
         form.submitted = true;

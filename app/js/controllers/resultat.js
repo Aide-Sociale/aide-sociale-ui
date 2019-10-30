@@ -37,7 +37,7 @@ angular.module('ddsApp').controller('ResultatCtrl', function($analytics, $http, 
                         $scope.openfiscaTracerURL = data.destination.url;
                     }).catch(function() {});
             }).then(function(){
-                console.clear();
+                
                 $http.get('api/situations/' + $scope.situation._id + '/simulateur-aide-social').then(function(asres){
                     $scope.aide_sociale_fr = asres.data;
                 });
