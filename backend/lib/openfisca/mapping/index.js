@@ -113,6 +113,8 @@ function applyHeuristicsAndFix(testCase, dateDeValeur) {
 }
 
 exports.buildOpenFiscaRequest = function(sourceSituation) {
+
+    console.log(sourceSituation);
     var situation = sourceSituation.toObject ? migrations.apply(sourceSituation).toObject() : _.cloneDeep(sourceSituation);
 
     var individus = mapIndividus(situation);
