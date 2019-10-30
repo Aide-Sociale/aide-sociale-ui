@@ -21,7 +21,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
         }, false),
     };
 
-    $scope.permis_de_conduire.situation = 0;
+    $scope.permis_de_conduire = { situation : 0 };
 
     function parentsPayPensionsAlimentairesUpdated() {
 
@@ -43,7 +43,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     
     $scope.$watch('permis_de_conduire.situation', function(){
         console.log('fffoooo');
-        console.log($scope.permis_de_conduire.permis_de_conduire.situation);
+        console.log($scope.permis_de_conduire.situation);
     });
 
 
