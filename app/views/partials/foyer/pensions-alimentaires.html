@@ -8,6 +8,7 @@
       depuis {{ debutAnneeGlissante }}</b> ?
       </question>
     </yes-no-question>
+    
 
     <div ng-if="locals.parentsPayPensionsAlimentaires" ng-repeat="individu in individus">
       <h2>{{ individuLabel(individu) }}</h2>
@@ -21,6 +22,14 @@
       </capture-montant-ressource>
     </div>
 
+    <hr/>
+    <yes-no-question model="locals.permisdeconduire" size="7">
+      <question>
+      Avez-vous un permis de conduire ?
+      </question>
+    </yes-no-question>
+
     <next-button></next-button>
   </form>
 </div>
+
