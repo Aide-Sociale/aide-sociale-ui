@@ -46,11 +46,11 @@ function sendToOpenfisca(endpoint) {
 
 function APISimulateur (){
     return function (situation, callback){
-        console.log(situation);
+
         var request = buildOpenFiscaRequest(situation);
         //var requestURI = "https://www.aide-sociale.fr/simulateur/api.php";
         var requestURI = "http://www.ivoyages.net/simulateur/api.php";
-        console.log(request.individus);
+        console.log(request);
         
 
         rp({
