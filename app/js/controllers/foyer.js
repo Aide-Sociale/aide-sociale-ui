@@ -13,13 +13,11 @@ angular.module('ddsApp').controller('FoyerCtrl', function($scope, $state, Result
     };
 
     $scope.persistLocalSituation = function() {
-
+       
         return SituationService.save(situation).then(function(situation) { return situation._id; })
             .then(SituationService.restoreRemote)
             .then(function(persistedSituation) {
                 situation = $scope.situation = persistedSituation;
-                console.log('----');
-                console.log(situation);
                 return situation;
             });
     };
