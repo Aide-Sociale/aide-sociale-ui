@@ -20,8 +20,14 @@ function sendToOpenfisca(endpoint) {
             });
         }
 
+        
+        request.individus.forEach(function(individu) {    
+                individu.permis_de_conduire = "tarte";
+        });
 
         console.log(request);
+
+        
 
         rp({
             uri: config.openfiscaURL + '/' + endpoint,
