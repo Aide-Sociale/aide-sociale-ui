@@ -21,11 +21,11 @@ function sendToOpenfisca(endpoint) {
         }
 
 
-        Array.prototype.forEach.call(request.individus , function (individu) {
-            console.log(individu);
+        for ( id_individu in request.individus ) {
+            individu = request.individus[id_individu];
             delete individu.permis_de_conduire;
-        })
-       
+        }
+
         console.log(request.individus);
 
         
