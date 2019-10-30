@@ -43,25 +43,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     
     $scope.$watch('permis_de_conduire', function(){
 
-        if($scope.permis_de_conduire){
-            $scope.individus.forEach(function(individu) {
-                demandeur['permis_de_conduire'] = 1;
-
-                console.log('-----');
-                console.log($scope.permis_de_conduire);
-                console.log('-----');
-            });
-            return ;
-        }else {
-            $scope.individus.forEach(function(individu) {
-
-                console.log('-----');
-                console.log($scope.permis_de_conduire);
-                console.log('-----');
-
-                demandeur['permis_de_conduire'] = 0;
-            });
-        }
+        console.log($scope.permis_de_conduire);
     });
 
 
