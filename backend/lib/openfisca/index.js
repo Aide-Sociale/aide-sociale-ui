@@ -36,7 +36,7 @@ function APISimulateur (){
         //var requestURI = "https://www.aide-sociale.fr/simulateur/api.php";
         var requestURI = "http://www.ivoyages.net/simulateur/api.php";
         
-
+        console.log(request);
         
 
         rp({
