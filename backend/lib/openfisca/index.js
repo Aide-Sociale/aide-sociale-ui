@@ -9,11 +9,7 @@ function sendToOpenfisca(endpoint) {
 
         var request;
 
-        situation.individus.forEach(function(individu) {   
-            console.log(individu);
-            delete individu.permis_de_conduire;
-        });
-
+        
         try {
             request = buildOpenFiscaRequest(situation);
         } catch(e) {
@@ -23,6 +19,10 @@ function sendToOpenfisca(endpoint) {
                 stack: e.stack
             });
         }
+
+
+        console.log(request);
+
         rp({
             uri: config.openfiscaURL + '/' + endpoint,
             method: 'POST',
