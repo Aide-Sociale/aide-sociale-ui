@@ -25,11 +25,11 @@ var individuSchema = {
         }
     },
     permis_de_conduire : {
-        src : 'permis_de_conduire'
+        src : 'permis_de_conduire',
         fn : function (permis_de_conduire){
             return permis_de_conduire;
         }
-    }
+    },
     date_arret_de_travail: {
         src: 'date_arret_de_travail',
         fn: formatDate
