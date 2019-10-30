@@ -22,6 +22,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     };
 
     $scope.permis_de_conduire = false;
+    $scope.difficultes = false;
 
     function parentsPayPensionsAlimentairesUpdated() {
 

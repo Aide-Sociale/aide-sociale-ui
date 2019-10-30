@@ -25,7 +25,7 @@
     <hr/>
 
     <fieldset class="form-group">
-      <legend class="col-sm-7 control-label" >Avez-vous un permis de conduire</legend>
+      <legend class="col-sm-7 control-label" >Avez-vous un permis de conduire ?</legend>
       <div class="col-sm-3">
         <label
           class="btn btn-default"
@@ -44,7 +44,7 @@
           <input
             type="radio"
             class="sr-only"
-            ng-model="permis_deconduire"
+            ng-model="permis_de_conduire"
             value="false"
             />
           Non
@@ -53,12 +53,35 @@
 
     </fieldset>
 
-
-
-
-    <p>{{permis_de_conduire}}</p>
     <hr/>
+    <fieldset class="form-group">
+      <legend class="col-sm-7 control-label" >Avez-vous des difficultés financières ?</legend>
+      <div class="col-sm-3">
+        <label
+          class="btn btn-default"
+          ng-class="{active: difficultes == 'true'}">
+          <input
+            type="radio"
+            class="sr-only"
+            ng-model="difficultes"
+            value="true"
+            />
+          Oui
+        </label>
+        <label
+          class="btn btn-default"
+          ng-class="{active: difficultes == 'false'}">
+          <input
+            type="radio"
+            class="sr-only"
+            ng-model="difficultes"
+            value="false"
+            />
+          Non
+        </label>
+      </div>
 
+    </fieldset>
 
     <next-button></next-button>
   </form>
