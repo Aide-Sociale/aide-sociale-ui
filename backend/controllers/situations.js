@@ -73,6 +73,7 @@ exports.openfiscaResponse = function(req, res, next) {
 // Apisimulateur fonction d'exportation (ludo)
 
 exports.simulateurAideSocial = function (req, res, next){
+    
     return openfisca.simulation_aide_social(req.situation , function (err, result){
         if (err) return next(Object.assign(err , { _id: req.situation._id }));
 
