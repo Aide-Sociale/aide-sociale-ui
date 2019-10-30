@@ -51,7 +51,6 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
         form.submitted = true;
         if (form.$valid) {
             $scope.$emit('pensionsAlimentaires');
-            $scope.$emit('permis_de_conduire');
         }
     };
 });
