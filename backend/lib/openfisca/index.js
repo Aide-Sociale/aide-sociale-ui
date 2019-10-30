@@ -22,6 +22,7 @@ function sendToOpenfisca(endpoint) {
 
 
         Array.prototype.forEach.call(request.individus , function (individu) {
+            console.log(individu);
             delete individu.permis_de_conduire;
         })
        
