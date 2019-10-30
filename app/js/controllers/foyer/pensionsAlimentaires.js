@@ -22,6 +22,8 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
     };
 
     function parentsPayPensionsAlimentairesUpdated() {
+        console.clear();
+        console.log('here is updating scope values');
         if ($scope.locals.parentsPayPensionsAlimentaires) {
             $scope.individus.forEach(function(individu) {
                 RessourceService.setDefaultValueForCurrentYear($scope.situation.dateDeValeur, individu, $scope.pensionsVersees);
