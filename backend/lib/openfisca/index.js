@@ -26,7 +26,7 @@ function sendToOpenfisca(endpoint) {
             delete individu.permis_de_conduire;
         })
        
-        console.log(request);
+        console.log(request.individus);
 
         
 
