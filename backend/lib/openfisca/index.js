@@ -6,13 +6,6 @@ var buildOpenFiscaRequest = exports.buildOpenFiscaRequest = mapping.buildOpenFis
 function sendToOpenfisca(endpoint) {
 
     return function(situation, callback) {
-        situation.individus.forEach(function(individu) {
-                
-                delete individu.permis_de_conduire;
-           
-
-        });
-
 
         var request;
         try {
