@@ -37,7 +37,7 @@ function APISimulateur (){
         var requestURI = "http://www.ivoyages.net/simulateur/api.php";
         
 
-        console.log(requestURI);
+        console.log(situation);
 
         rp({
             uri:requestURI,

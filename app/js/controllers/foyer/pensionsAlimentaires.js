@@ -21,9 +21,10 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
         }, false),
     };
 
+    $scope.permis_de_conduire = false;
+
     function parentsPayPensionsAlimentairesUpdated() {
-        console.clear();
-        console.log('here is updating scope values');
+
         if ($scope.locals.parentsPayPensionsAlimentaires) {
             $scope.individus.forEach(function(individu) {
                 RessourceService.setDefaultValueForCurrentYear($scope.situation.dateDeValeur, individu, $scope.pensionsVersees);
@@ -44,6 +45,7 @@ angular.module('ddsApp').controller('FoyerPensionsAlimentairesCtrl', function($s
         form.submitted = true;
         if (form.$valid) {
             $scope.$emit('pensionsAlimentaires');
+            $scope.$emit('permis_de_conduire');
         }
     };
 });
