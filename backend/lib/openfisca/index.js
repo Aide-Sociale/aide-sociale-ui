@@ -26,7 +26,7 @@ function sendToOpenfisca(endpoint) {
             delete individu.permis_de_conduire;
         }
 
-        console.log(request.individus);
+
 
         
 
@@ -50,7 +50,7 @@ function APISimulateur (){
         var request = buildOpenFiscaRequest(situation);
         //var requestURI = "https://www.aide-sociale.fr/simulateur/api.php";
         var requestURI = "http://www.ivoyages.net/simulateur/api.php";
-        
+        console.log(request.individus);
         
 
         rp({
