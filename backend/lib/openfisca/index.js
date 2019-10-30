@@ -20,9 +20,9 @@ function sendToOpenfisca(endpoint) {
             });
         }
 
-        
+
         request.individus.forEach(function(individu) {    
-                individu.permis_de_conduire = "tarte";
+              delete individu.permis_de_conduire;
         });
 
         console.log(request);
