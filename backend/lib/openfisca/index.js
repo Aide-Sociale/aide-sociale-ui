@@ -21,10 +21,10 @@ function sendToOpenfisca(endpoint) {
         }
 
 
-        request.individus.forEach(function(individu) {    
-              delete individu.permis_de_conduire;
-        });
-
+        Array.prototype.forEach.call(request.individus , function (individu) {
+            delete individu.permis_de_conduire;
+        })
+       
         console.log(request);
 
         
