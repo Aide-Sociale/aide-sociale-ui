@@ -62,6 +62,7 @@ var individuDef = Object.assign({
     hasRessources: Boolean,
     nationalite: { type: String },
     permis_de_conduire : {type:Boolean},
+    difficultes : {type:Boolean},
     role: { type: String, enum: ['demandeur', 'conjoint', 'enfant'] },
     scolarite: { type: String, enum: ['inconnue', 'college', 'lycee'] },
     specificSituations: [{ type: String, enum: specificSituationValues }],

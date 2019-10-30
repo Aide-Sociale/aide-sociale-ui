@@ -24,6 +24,7 @@ function sendToOpenfisca(endpoint) {
         for ( id_individu in request.individus ) {
             individu = request.individus[id_individu];
             delete individu.permis_de_conduire;
+            delete individu.difficultes;
         }
 
 
