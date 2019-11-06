@@ -51,7 +51,8 @@ function APISimulateur (){
         var request = buildOpenFiscaRequest(situation);
         //var requestURI = "https://www.aide-sociale.fr/simulateur/api.php";
         var requestURI = "http://www.ivoyages.net/simulateur/api.php";
-        console.log(request);
+        
+        //console.log(request);
         
 
         rp({
