@@ -3,7 +3,7 @@
 angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($scope, $stateParams, ressourceTypes, RessourceService, IndividuService) {
    
     //console.log($scope.selectedRessourceTypes); //{salaire_net: true} ou {retraite_net : true}
-
+    console.log($scope);
 
     $scope.selectedRessourceTypes = {salaire_net:true};
 
