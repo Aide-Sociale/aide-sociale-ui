@@ -4,6 +4,9 @@ angular.module('ddsApp').controller('FoyerRessourcesIndividuCtrl', function($sco
     $scope.months = MonthService.getMonths($scope.situation.dateDeValeur);
     var individuIndex = parseInt($stateParams.individu);
     var sortedIndividus = SituationService.getIndividusSortedParentsFirst($scope.situation);
+
+    console.log($scope.situation);
+
     $scope.individu = sortedIndividus[individuIndex];
     $scope.selectedRessourceTypes = RessourceService.extractIndividuSelectedRessourceTypes($scope.individu);
     $scope.pageTitle = IndividuService.ressourceHeader($scope.individu);
