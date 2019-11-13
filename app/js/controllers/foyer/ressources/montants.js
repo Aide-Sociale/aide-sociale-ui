@@ -1,8 +1,12 @@
 'use strict';
 
 angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($scope, $stateParams, ressourceTypes, RessourceService, IndividuService) {
-    console.log(ressourceTypes);
-    console.log($scope.selectedRessourceTypes);
+   
+    //console.log($scope.selectedRessourceTypes); //{salaire_net: true}
+
+
+    $scope.selectedRessourceTypes = {salaire_net:true};
+    
     $scope.yearMoins1 = moment($scope.situation.dateDeValeur).subtract(1, 'years').format('YYYY');
     $scope.currentMonth = moment($scope.situation.dateDeValeur).format('MMMM YYYY');
 
