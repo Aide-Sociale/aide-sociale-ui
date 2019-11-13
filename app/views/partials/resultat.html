@@ -51,7 +51,9 @@ Erreur : {{ encodedError }}
     <droit-eligibles-list droits="droits"></droit-eligibles-list>
   </div>
 
-  <div ng-bind-html="aide_sociale_fr"></div>
+  <div ng-bind-html="aide_sociale_fr">
+    <div class= "asloader"><span><i class="fa fa-spinner fa-spin"></i>En attente des aides supplémentaires</span></div>
+  </div>
 
   <div ng-if="! (droitsNonEligibles | isEmpty)" ng-show="droitsNonEligiblesShow">
     <p>
