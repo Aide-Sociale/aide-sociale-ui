@@ -49,12 +49,6 @@ ddsApp.config(function($locationProvider, $stateProvider, $urlRouterProvider, $u
     };
 
     $stateProvider
-        .state('home', {
-            url: '/',
-            templateUrl: '/partials/homepage.html',
-            controller: 'HomepageCtrl',
-            preventFocus: true
-        })
         .state('init-ci', {
             url: '/init-ci',
             data: {
@@ -193,7 +187,7 @@ ddsApp.config(function($locationProvider, $stateProvider, $urlRouterProvider, $u
             }
         })
         .state('foyer.demandeur', {
-            url: '/demandeur',
+            url: '/',
             views: {
                 '': {
                     templateUrl: '/partials/foyer/demandeur.html'

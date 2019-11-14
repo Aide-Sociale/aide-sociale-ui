@@ -2,15 +2,16 @@
 
 angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($scope, $stateParams, ressourceTypes, RessourceService, IndividuService) {
    
-    //console.log($scope.selectedRessourceTypes); //{salaire_net: true} ou {retraite_net : true}
+    //console.log($scope.selectedRessourceTypes); //{salaire_net: true} ou {retraite_nette : true} ou { chomage_net : true }
     //console.log($scope);
 
     $scope.selectedRessourceTypes = {salaire_net:true};
-    console.clear();
-    console.log($scope.individu.specificSituations);
-    console.log($scope.individu.specificSituations.indexOf("retraite"));
+
 
     //var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
+
+    // $scope.individu.specificSituations.indexOf("retraite") = -1 if false
+
     if ( $scope.individu.specificSituations.indexOf("retraite") >= 0 )  {
         $scope.selectedRessourceTypes = {retraite_nette : true} ;
     } else if ( $scope.individu.specificSituations.indexOf("chomeur") >= 0) {
