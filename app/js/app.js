@@ -186,8 +186,8 @@ ddsApp.config(function($locationProvider, $stateProvider, $urlRouterProvider, $u
                 pageTitle: 'Simulation'
             }
         })
-        .state('foyer.demandeur', {
-            url: '/',
+        .state('home', {
+            url: '/demandeur',
             views: {
                 '': {
                     templateUrl: '/partials/foyer/demandeur.html'
