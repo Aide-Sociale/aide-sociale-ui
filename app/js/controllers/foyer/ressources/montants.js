@@ -6,17 +6,13 @@ angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($sco
     //console.log($scope);
 
     $scope.selectedRessourceTypes = {salaire_net:true};
+    console.log($scope);
 
-    console.clear();
-    console.log(IndividuService.formatStatutsSpecifiques($scope.individu));
-    console.log($scope.individu);
-
-    var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
-
-    if ( statutSpecific == "Retraité·e") {
-        $scope.selectedRessourceTypes = {retraite_nette:true};
-    } else if ( statutSpecific == "Inscrit·e comme demandeur d’emploi") {
-        $scope.selectedRessourceTypes + {chomage_net:true};
+    //var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
+    if ( $scope.individu.specificSituations.indexOf("retraite") > 0 )  {
+        $scope.selectedRessourceTypes.retraite_nette = true ;
+    } else if ( $scope.individu.specificSituations.indexOf("chomeur") > 0) {
+        $scope.selectedRessourceTypes.chomage_net = true;
     } 
 
 
