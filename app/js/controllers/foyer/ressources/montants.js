@@ -6,7 +6,7 @@ angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($sco
     //console.log($scope);
 
     $scope.selectedRessourceTypes = {salaire_net:true};
-    console.log($scope);
+    console.log($scope.individu.specificSituations);
 
     //var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
     if ( $scope.individu.specificSituations.indexOf("retraite") > 0 )  {
