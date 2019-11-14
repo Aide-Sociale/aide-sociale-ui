@@ -11,9 +11,9 @@ angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($sco
     console.log($scope.individu.specificSituations.indexOf("retraite"));
 
     //var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
-    if ( $scope.individu.specificSituations.indexOf("retraite") > 0 )  {
+    if ( $scope.individu.specificSituations.indexOf("retraite") >= 0 )  {
         $scope.selectedRessourceTypes = {retraite_nette : true} ;
-    } else if ( $scope.individu.specificSituations.indexOf("chomeur") > 0) {
+    } else if ( $scope.individu.specificSituations.indexOf("chomeur") >= 0) {
         $scope.selectedRessourceTypes = {chomage_net : true };
     } 
 
