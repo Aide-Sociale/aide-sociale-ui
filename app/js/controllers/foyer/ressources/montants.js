@@ -10,9 +10,9 @@ angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($sco
 
     //var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
     if ( $scope.individu.specificSituations.indexOf("retraite") > 0 )  {
-        $scope.selectedRessourceTypes.retraite_nette = true ;
+        $scope.selectedRessourceTypes = {retraite_nette : true} ;
     } else if ( $scope.individu.specificSituations.indexOf("chomeur") > 0) {
-        $scope.selectedRessourceTypes.chomage_net = true;
+        $scope.selectedRessourceTypes = {chomage_net : true };
     } 
 
 
