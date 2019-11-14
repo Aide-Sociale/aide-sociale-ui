@@ -7,9 +7,17 @@ angular.module('ddsApp').controller('FoyerRessourcesMontantsCtrl', function($sco
 
     $scope.selectedRessourceTypes = {salaire_net:true};
 
-
+    console.clear();
     console.log(IndividuService.formatStatutsSpecifiques($scope.individu));
-    
+    console.log($scope.individu);
+
+    var statutSpecific = IndividuService.formatStatutsSpecifiques($scope.individu);
+
+    if ( statutSpecific == "Retraité·e") {
+        $scope.selectedRessourceTypes = {retraite_nette:true};
+    } else if ( statutSpecific == "Inscrit·e comme demandeur d’emploi") {
+        $scope.selectedRessourceTypes + {chomage_net:true};
+    } 
 
 
     $scope.yearMoins1 = moment($scope.situation.dateDeValeur).subtract(1, 'years').format('YYYY');
