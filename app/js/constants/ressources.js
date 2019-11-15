@@ -34,7 +34,7 @@ var ressourceCategories = [
 var ressourceTypes = [
     {
         id: 'salaire_net',
-        label: 'Salaire (dont primes et indemnités de fin de contrat)',
+        label: ' Revenus nets mensuels ' ,//'Salaire (dont primes et indemnités de fin de contrat)',
         category: 'revenusActivite',
         interuptionQuestionLabel: 'un salaire, des allocations chômage, ou des indemnités de la sécurité sociale',
         positionInList: '1',
@@ -54,8 +54,8 @@ var ressourceTypes = [
     },
     {
         id: 'chomage_net',
-        label: 'Allocations chômage (ARE)',
-        category: 'allocations',
+        label: 'Revenus nets mensuels ',//'Allocations chômage (ARE)',
+        category: 'revenusActivite',//'allocations',
         interuptionQuestionLabel: 'des allocations chômage, un salaire ou des indemnités de la sécurité sociale',
         hint: 'Entrez le montant avant la retenue à la source'
     },
@@ -239,8 +239,8 @@ var ressourceTypes = [
     },
     {
         id: 'retraite_nette',
-        label: 'Retraite (y compris reversion), rente',
-        category: 'pensions',
+        label: ' Revenus nets mensuels ' ,//'Retraite (y compris reversion), rente',
+        category: 'revenusActivite' ,//'pensions',
         prefix: 'une',
         hint: 'Entrez le montant avant la retenue à la source'
     },
