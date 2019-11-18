@@ -58,8 +58,7 @@ angular.module('ddsApp').directive('breadcrumb', function($transitions) {
 
             $scope.getState = function(step) {
                 if (step === 'foyer.ressources') {
-                    //return 'foyer.ressources.individu.types';
-                    return 'foyer.ressources.individu.montants';
+                    return 'foyer.ressources.individu.types';                    
                 }
                 return step;
             };

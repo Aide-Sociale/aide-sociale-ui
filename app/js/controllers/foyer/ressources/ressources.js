@@ -21,8 +21,7 @@ angular.module('ddsApp').controller('FoyerRessourcesCtrl', function($scope, $sta
         }
         if (nextIndividu.role == 'conjoint' || nextIndividu.hasRessources) {
 
-            //$state.go('foyer.ressources.individu.types', { individu: nextIndividuIndex });
-            $state.go('foyer.ressources.individu.montants', { individu: nextIndividuIndex });
+            $state.go('foyer.ressources.individu.types', { individu: nextIndividuIndex });
             return;
         }
         if (! haveEnfantsResourcesBeenDeclared) {

@@ -55,8 +55,8 @@ angular.module('ddsApp').controller('FoyerCtrl', function($scope, $state, Result
 
     $scope.$on('logement', function() {
         $scope.$broadcast('logementCaptured');
-       // $state.go('foyer.ressources.individu.types', { individu: 0 });
-       $state.go('foyer.ressources.individu.montants', { individu: 0 });
+        $state.go('foyer.ressources.individu.types', { individu: 0 });
+       
     });
 
     $scope.$on('pensionsAlimentaires', function() {
