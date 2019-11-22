@@ -38,7 +38,7 @@ breadcrumb--circles .step:before {
 }
 
 .breadcrumb--circles li.done .step {
-    background: #008cba;
+    background: #05698B ;
     border: none;
 }
 
@@ -59,7 +59,7 @@ breadcrumb--circles .step:before {
     text-decoration: underline;
 }
 .breadcrumb--circles li.active .step {
-    background: #008cba;
+    background: #05698B;
     border: none;
 }
 
