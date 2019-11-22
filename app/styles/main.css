@@ -77,3 +77,9 @@ header, footer {
   justify-content: space-between;
   align-items: center;
 }
+
+/*Titre des categories d'aide pour les aides AS*/
+.benefit-category-title{
+  font-size: 26px;
+  font-weight: 500;
+}
