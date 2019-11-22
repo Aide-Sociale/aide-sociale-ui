@@ -19,7 +19,8 @@ header, footer {
 }
 
 .body-front {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
+    background-color:#BBACAC;
 }
 
 .axis path,
