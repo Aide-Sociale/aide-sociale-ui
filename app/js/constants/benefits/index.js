@@ -77,7 +77,8 @@ var droitsDescription = {
                     'conditions': [
                         'Résider <abbr title="Métropole, Guadeloupe, Guyane, Martinique ou Réunion">en France</abbr> plus de <abbr title="180 jours, potentiellement discontinus">6 mois</abbr> cette année.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F13213',
+                    //'link': 'https://www.service-public.fr/particuliers/vosdroits/F13213',
+                    'link': 'https://www.aide-sociale.fr/montant-allocation-familiale/',
                     'form': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationsfamilialesouchangementdesituation',
                     'forms': {
                         'caf': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationsfamilialesouchangementdesituation',
