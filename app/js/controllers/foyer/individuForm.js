@@ -46,7 +46,7 @@ angular.module('ddsApp').controller('FoyerIndividuFormCtrl', function($scope, $s
         },
         {
             value: 'lycee',
-            label: 'Au lycée / En CAP / En CPA'
+            label: 'Au lycée / En CAP / En Classe de Préparatoire à l\'apprentissage'
         }
     ];
 
