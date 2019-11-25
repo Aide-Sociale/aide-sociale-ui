@@ -11,7 +11,7 @@ angular.module('ddsCommon').constant('specificSituations', [
     },
     {
         id: 'chomeur',
-        label: 'Inscrit·e comme demandeur d’emploi'
+        label: 'Demandeur d\'emploi'
     },
     {
         id: 'handicap',
