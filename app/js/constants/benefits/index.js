@@ -16,7 +16,7 @@ var droitsDescription = {
                         'Avoir demandé toutes les retraites (générale, réversion, complémentaire…) auxquelles vous avez droit.',
                         'Votre conjoint·e doit avoir demandé toutes les retraites (générale, réversion, complémentaire…) auxquelles il ou elle a droit.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F16871',
+                    'link': 'https://www.aide-sociale.fr/minimum-retraite-aspa/',
                     'form': 'https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub-bootstrap/files/Guides%20et%20formulaires/demande-aspa.pdf',
                     'forms' : {
                         'cnav': 'https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub-bootstrap/files/Guides%20et%20formulaires/demande-aspa.pdf',
@@ -38,7 +38,7 @@ var droitsDescription = {
                     'conditions': [
                         'Résider <abbr title="Métropole, Guadeloupe, Guyane, Martinique ou Réunion">en France</abbr> depuis plus de 3 mois.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F10027',
+                    'link': 'https://www.aide-sociale.fr/complementaire-sante-solidaire/',
                     'form': 'https://www.complementaire-sante-solidaire.gouv.fr/fichier-utilisateur/fichiers/S3711%20HOMO%20COMPLEMENTAIRE%20SANTE%20SOLIDAIRE%20non%20secu%2009_2019.pdf',
                     'teleservice': 'https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true&_pageID=P1_DEMANDE_CMUC',
                     'forms': {
@@ -53,7 +53,7 @@ var droitsDescription = {
                 'asi': {
                     'label': 'Allocation supplémentaire d’invalidité',
                     'description': 'L’allocation supplémentaire d’invalidité (Asi) est une prestation accordée à certaines personnes invalides. Elle s’adresse à celles et ceux qui ont de faibles ressources et n’ont pas atteint l’âge de départ à la retraite. Elle est versée tous les mois et s’ajoute, dans une certaine limite, aux revenus personnels.',
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F16940',
+                    'link': 'https://www.aide-sociale.fr/asi-allocation-supplementaire-d-invalidite/',
                     'form': 'http://www.ameli.fr/fileadmin/user_upload/formulaires/S4151.pdf',
                     'forms' : {
                         'general': 'http://www.ameli.fr/fileadmin/user_upload/formulaires/S4151.pdf',
@@ -224,7 +224,7 @@ var droitsDescription = {
                     'label': 'Allocation aux adultes handicapés',
                     'description': 'L’allocation aux adultes handicapés (AAH) est une aide financière qui permet d’assurer un revenu minimum. Cette aide est attribuée sous réserve de respecter 4 critères : le taux d’incapacité, l’âge, la nationalité et les ressources. L’AAH peut se cumuler soit avec le complément de ressources, soit avec la majoration pour la vie autonome ou, dans certains cas, l’aide à l’autonomie.',
                     'isBaseRessourcesYearMoins2': true,
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F12242',
+                    'link': 'https://www.aide-sociale.fr/aah-allocation-adulte-handicape/',
                     'forms': {
                         'mdph': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_13788.do',
                     },
@@ -239,7 +239,7 @@ var droitsDescription = {
                         'Avoir une capacité de travail (appréciée par la CADPH) inférieure à 5 % du fait de votre handicap.'
                     ],
                     'isBaseRessourcesYearMoins2': true,
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F12911',
+                    'link': 'https://www.aide-sociale.fr/aah-allocation-adulte-handicape/',
                     'forms': {
                         'mdph': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_13788.do',
                     },
@@ -256,7 +256,7 @@ var droitsDescription = {
                 'ass': {
                     'label': 'Allocation de solidarité spécifique',
                     'description': 'L’allocation de solidarité spécifique (ASS) est attribuée aux personnes ayant épuisé leurs droits au chômage sous conditions d’activité antérieure et de ressources. Elle peut être versée à taux plein ou à taux réduit. En cas de reprise d’activité, elle peut être maintenue.',
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F12484',
+                    'link': 'https://www.aide-sociale.fr/ass-allocation-solidarite-specifique/',
                     /* En principe, formulaire envoyé automatiquement ; lien vers brochure pole emploi */
                     'instructions': 'http://www.pole-emploi.fr/front/common/tools/download_file.jspz?mediaid=186108',
                     'entity': 'individu', // default entity is famille
@@ -277,7 +277,7 @@ var droitsDescription = {
                         'Effectuer chaque année votre déclaration auprès des impôts.',
                         'Utiliser votre Chèque Énergie reçu en avril avant le 31 mars de l’année suivante.'
                     ],
-                    'link': 'https://www.chequeenergie.gouv.fr/',
+                    'link': 'https://www.aide-sociale.fr/cheque-energie/',
                     /* En principe, envoyé automatique : lien direct vers le formulaire d'utilisation en ligne */
                     'instructions': 'https://www.chequeenergie.gouv.fr/beneficiaire/paiement',
                     'isBaseRessourcesYearMoins2': true,
@@ -298,7 +298,7 @@ var droitsDescription = {
                         'Faire votre demande d´accompagnement auprès de <a target="_blank" rel="noopener" href="https://www.unml.info/les-missions-locales/annuaire/" title="Annuaire des missions locales" >la Mission Locale</a> dont vous dépendez.',
                         'Être indépendant.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F32700',
+                    'link': 'https://www.aide-sociale.fr/garantie-jeune/ ',
                     'entity': 'individu', // default entity is famille
                 },
             },
@@ -332,7 +332,7 @@ var droitsDescription = {
                         'Présenter à l’établissement bancaire votre avis d’imposition indiquant votre revenu fiscal.',
                     ],
                     'legend': 'au lieu de 0,75%',
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F2367',
+                    'link': 'https://www.aide-sociale.fr/livret-epargne-populaire/',
                     'entity': 'individu', // default entity is famille
                     'isBaseRessourcesYearMoins2': true,
                     floorAt: 0.01,
@@ -352,7 +352,7 @@ var droitsDescription = {
                         'Déposer votre dossier à partir de l’été 2018 pour l’année scolaire 2018-2019.',
                         'Pour les élèves scolarisés en collège public, la demande se fait en ligne sur le portail Scolarité Services de votre établissement.',
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F984',
+                    'link': 'https://www.aide-sociale.fr/bourse-des-colleges/',
                     'instructions': 'http://www.education.gouv.fr/cid117994/scolarite-services-aide-a-la-premiere-connexion-des-parents.html',
                     'forms': {
                         '2017-18': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_12539.do',
@@ -367,7 +367,7 @@ var droitsDescription = {
                         'Déposer votre dossier avant le 20 juin 2018 pour l’année scolaire 2018-2019.',
                         'Pour les élèves scolarisés en lycée public, la demande se fait en ligne sur le portail Scolarité-Services',
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F616',
+                    'link': 'https://www.aide-sociale.fr/bourse-de-lycee/',
                     'form': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_11319.do',
                     'forms': {
                         '2017-18': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_11319.do',
@@ -392,7 +392,7 @@ var droitsDescription = {
                         'Ou bien auprès de la préfecture du département, à la mairie de la ville ou des organismes collecteurs du 1% logement',
                         'Renouveler chaque année votre demande jusqu’à obtention d’un logement',
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F869',
+                    'link': 'https://www.aide-sociale.fr/faire-demande-de-logement-social/ ',
                     'teleservice': 'https://www.demande-logement-social.gouv.fr/creation/accesCriteresEligibilites.do',
                     'top': 10,
                 },
