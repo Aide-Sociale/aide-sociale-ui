@@ -144,8 +144,7 @@
       <div class="checkbox">
         <label>
           <input type="checkbox" ng-model="individu.no_specific_situation">
-          <i ng-if ="individu.role == 'demandeur' || individu.role == 'conjoint' ">{{ individu.role == 'demandeur' ? 'Je ne suis dans' : 'Il ou elle n\'est dans' }} aucune de ces situations</i>
-          <i ng-if =" !(individu.role == 'demandeur' || individu.role == 'conjoint') ">En activité (salarié, travailleur indépendant)</i>
+          <i >En activité (salarié, travailleur indépendant)</i>
         </label>
       </div>
     </div>
@@ -244,7 +243,7 @@
 
   <fieldset class="form-group" ng-if="selectedStatuts.etudiant">
     <label class="col-sm-4 control-label" for="echelon-bourse">
-      Quelt est {{ individu.role == 'demandeur' ? 'votre' : 'son' }} échelon boursier ?
+      Quel est {{ individu.role == 'demandeur' ? 'votre' : 'son' }} échelon boursier ?
     </label>
     <div class="col-sm-4">
       <input id="echelon-bourse"
