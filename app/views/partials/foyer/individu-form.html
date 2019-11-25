@@ -144,7 +144,8 @@
       <div class="checkbox">
         <label>
           <input type="checkbox" ng-model="individu.no_specific_situation">
-          <i>En activité (salarié ou travailleur indépendant)</i>
+          <i ng-if ="individu.role == 'demandeur' || individu.role == 'conjoint' ">{{ individu.role == 'demandeur' ? 'Je ne suis dans' : 'Il ou elle n\'est dans' }} aucune de ces situations</i>
+          <i ng-if =" !(individu.role == 'demandeur' || individu.role == 'conjoint') ">En activité (salarié, travailleur indépendant)</i>
         </label>
       </div>
     </div>
