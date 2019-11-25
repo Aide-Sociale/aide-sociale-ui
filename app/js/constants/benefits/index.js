@@ -89,7 +89,7 @@ var droitsDescription = {
                 'cf': {
                     'label': 'Complément familial',
                     'description': 'Le complément familial s’ajoute aux allocations familiales à partir du troisième enfant à charge âgé de plus de 3 ans et de moins de 21 ans. Il est destiné aux familles ayant de faibles ressources. Dans les DOM, le complément familial concerne tous les enfants à charge âgés entre 3 et 5 ans.',
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F13214',
+                    'link': 'https://www.aide-sociale.fr/allocations-familiales-3-enfants/',
                     'form': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationsfamilialesouchangementdesituation',
                     'forms': {
                         'caf': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationsfamilialesouchangementdesituation',
@@ -103,7 +103,7 @@ var droitsDescription = {
                     'conditions': [
                         'Toucher une pension alimentaire d’un montant inférieur à celui de l’ASF ou ne pas toucher en intégralité une pension alimentaire attribuée par une décision de justice. À noter : la Caf ou la MSA peut vous aider à <a target="_blank" rel="noopener" title="Agence de recouvrement des impayés de pensions alimentaires (ARIPA)" href="https://www.pension-alimentaire.caf.fr/">récupérer les sommes dues</a>.'
                     ],
-                    'link': 'https://www.caf.fr/aides-et-services/s-informer-sur-les-aides/solidarite-et-insertion/l-allocation-de-soutien-familial-asf-0',
+                    'link': 'https://www.aide-sociale.fr/allocation-soutien-familial/',
                     'form': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationdesoutienfamilial/!ut/p/a1/',
                     'forms': {
                         'caf': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationdesoutienfamilial/!ut/p/a1/',
@@ -117,7 +117,7 @@ var droitsDescription = {
                     'conditions': [
                         'Résider <abbr title="Métropole, Guadeloupe, Guyane, Martinique ou Réunion">en France</abbr> plus de <abbr title="180 jours, potentiellement discontinus">6 mois</abbr> cette année.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F13218',
+                    'link': 'https://www.aide-sociale.fr/allocation-base-caf/',
                     /* Teleservice caf si naissance ; formulaire caf si adoption ; formulaire MSA tout le temps ; le cas le plus général est le formulaire de changement de situation pour la Caf et la MSA */
                     'form': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/allocationsfamilialesouchangementdesituation',
                     'forms': {
@@ -134,7 +134,7 @@ var droitsDescription = {
                         'Signer un <a target="_blank" rel="noopener" href="http://social-sante.gouv.fr/affaires-sociales/lutte-contre-l-exclusion/droits-et-aides/le-revenu-de-solidarite-active-rsa/article/quels-sont-les-droits-et-devoirs-des-beneficiaires-du-rsa" title="Détails sur les droits et devoirs des bénéficiaires du RSA">contrat d’engagement réciproque</a> (CER) avec votre département ou un <a target="_blank" rel="noopener"  href="https://www.service-public.fr/particuliers/vosdroits/F14926" title="Détails sur les droits et devoirs des bénéficiaires du RSA">Projet Personnalisé d’Accès à l’Emploi</a> (PPAE) avec Pôle emploi.',
                         'Résider en France plus de 9 mois par an.',
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/N19775',
+                    'link': 'https://www.aide-sociale.fr/rsa-socle-dossier-calcul/',
                     'teleservice': 'https://wwwd.caf.fr/redirect/s/Redirect?page=demandeRsa',
                     'forms': {
                         'caf': 'https://www.formulaires.modernisation.gouv.fr/gf/cerfa_15481.do',
@@ -181,7 +181,7 @@ var droitsDescription = {
                         'Résider au moins 8 mois par an dans le logement que vous avez décrit.',
                         'Le logement doit être <a target="_blank" rel="noopener" href="https://www.caf.fr/aides-et-services/connaitre-vos-droits-selon-votre-situation/vous-louez-ou-vous-achetez-un-logement/vous-occupez-un-logement-insalubre-ou-non-decent" title="9 mètres carrés par personne, fenêtre, WC, eau potable, électricité" >décent</a>.'
                     ],
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/N20360',
+                    'link': 'https://www.aide-sociale.fr/apl-caf/',
                     'teleservice': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/demanderlaideaulogement/',
                     'teleservices': {
                         'caf': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/demanderlaideaulogement/',
@@ -211,7 +211,7 @@ var droitsDescription = {
                     'label': 'Prime d’activité',
                     'labelFunction': function(b) { return `${b.label} pour un montant de ${b.montant} € / mois pendant 3 mois`; },
                     'description': 'La prime d’activité complète les revenus d’activité professionnelle des travailleurs de 18 ans ou plus, des étudiants salariés et apprentis et des non-salariés. La demande peut se faire à travers un téléservice sur, selon votre cas, le site de la Caf ou de la MSA. Elle remplace le RSA activité et la prime pour l’emploi depuis 2016.',
-                    'link': 'https://www.service-public.fr/particuliers/vosdroits/F2882',
+                    'link': 'https://www.aide-sociale.fr/calcul-prime-activite-demande/',
                     'teleservice': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/demanderlaprimedactivite/',
                     'teleservices': {
                         'caf': 'https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/demanderlaprimedactivite/',
