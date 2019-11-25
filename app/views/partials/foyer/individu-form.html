@@ -153,7 +153,8 @@
   <div ng-if="captureEligibiliteAss()">
     <div class="form-group" ng-class="{'has-error': submitted && form.date_debut_chomage.$invalid}">
       <label class="control-label col-sm-4" for="last-job-end-date">
-        Quand s’est terminé {{ individu.role == 'demandeur' ? 'votre' : 'son' }} dernier contrat de travail ?
+
+        Date de fin de  {{ individu.role == 'demandeur' ? 'votre' : 'son' }} dernier contrat
       </label>
       <div class="col-sm-4">
         <input
@@ -262,7 +263,7 @@
     ng-if="captureDemandeurACharge()"
     size="4"
     >
-    <question>Remplirez-vous vous-même votre prochaine déclaration de revenus aux impôts ?</question>
+    <question>Remplirez-vous à votre nom la prochaine déclaration d'impôts ?</question>
   </yes-no-question>
 
   <div class="form-group" ng-if="captureScolarite(form)">
