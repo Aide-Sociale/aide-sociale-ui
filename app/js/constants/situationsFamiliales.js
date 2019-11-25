@@ -11,7 +11,7 @@ var situationsFamiliales = [
     },
     {
         value: 'celibataire',  // Enum value 2 in OpenFisca
-        label: 'En union libre',
+        label: 'Union libre, concubinage',
     }
 ];
 module.exports = situationsFamiliales;
