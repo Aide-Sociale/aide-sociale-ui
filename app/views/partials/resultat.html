@@ -109,24 +109,7 @@ Erreur : {{ encodedError }}
           <li><a href="https://www.aide-sociale.fr/forum/" target="_blank">Vous rencontrez des difficultés dans vos démarches ? Posez votre question sur notre plateforme d'entraide</a></li>
         
       </ul>
-      <small ng-if="situation._id">Cette simulation a pour identifiant <span class="preformatted">{{ situation._id }}</span> (en savoir plus sur <a href="https://www.aide-sociale.fr/politique-confidentialite/" target="_blank">le traitement de vos données personnelles</a>).</small><br>
-      <small>
-        Partenaires :
-        <a
-          ui-sref="foyer.resultat.suggestion"
-          analytics-on="click"
-          analytics-category="Test"
-          analytics-event="New"
-          target="_blank"
-          >créez un test</a>
-        ou bien
-        <a
-          target="_blank"
-          ng-href="{{openfiscaTracerURL}}"
-          analytics-on="click"
-          analytics-category="Tracer"
-          >accédez à l'outil d'analyse des résultats de cette simulation</a>.
-      </small>
+      <small ng-if="situation._id">Cette simulation a pour identifiant <span class="preformatted">{{ situation._id }}</span> (en savoir plus sur <a href="https://www.aide-sociale.fr/politique-confidentialite/" target="_blank">le traitement de vos données personnelles</a>).</small>
     </div>
 
     <div>
