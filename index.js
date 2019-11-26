@@ -48,7 +48,14 @@ module.exports = function(app) {
             next();
         });
 
+        app.use(function(req, res, next) {
+            res.header("Access-Control-Allow-Origin", "www.ivoyages.net"); // update to match the domain you will make the request from
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            next();
+        });
+
     }
+
 
     var viewsDirectory = path.join(__dirname, directory, 'views');
     app.use(favicon(path.join(__dirname, directory, 'img', 'favicon', 'favicon.ico')));
