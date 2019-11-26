@@ -5,6 +5,7 @@ var mustache = require('consolidate').mustache;
 var bodyParser = require('body-parser');
 var utils = require('./backend/lib/utils');
 var benefits = require('./app/js/constants/benefits');
+var cors = require('cors');
 
 function countPublicByType(type) {
     return Object.keys(benefits[type]).reduce(function(total, provider) {
@@ -48,7 +49,7 @@ module.exports = function(app) {
             next();
         });
 
-
+        app.use(cors({origin: 'http://www.ivoyages.net'}));
 
     }
 
@@ -118,9 +119,5 @@ module.exports = function(app) {
         next();
     });
 
-    app.use(function(req, res, next) {
-        res.setHeader("Access-Control-Allow-Origin", "ivoyages.net"); 
-        res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        next();
-    });
+
 };
