@@ -85,3 +85,9 @@ header, footer {
   font-weight: 400;
   color : #C43B3B ;
 }
+
+@media screen and (max-width: 380px){
+  .droits-list-item-cell-left h2 span{
+    font-size:15px;
+  }
+}
