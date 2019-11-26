@@ -5,7 +5,7 @@ var mustache = require('consolidate').mustache;
 var bodyParser = require('body-parser');
 var utils = require('./backend/lib/utils');
 var benefits = require('./app/js/constants/benefits');
-
+var cors = require('cors');
 
 function countPublicByType(type) {
     return Object.keys(benefits[type]).reduce(function(total, provider) {
@@ -32,6 +32,8 @@ if (process.env.PUPPETEER_ARGS) {
 module.exports = function(app) {
     var env = app.get('env');
     var directory = 'dist';
+    
+    app.use(cors({origin: '*'}));
 
     if ('development' === env) {
 

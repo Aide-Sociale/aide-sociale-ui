@@ -4,7 +4,6 @@ var express = require('express');
 var morgan = require('morgan');
 var ludwigConfig = require('./ludwig/ui-config');
 var Sentry = require('@sentry/node');
-var cors = require('cors');
 var port = process.env.PORT || 9000;
 
 ludwigConfig.mesAidesRootUrl = process.env.MES_AIDES_ROOT_URL || ('http://localhost:' + port);
@@ -17,7 +16,7 @@ Sentry.init({
 
 // Setup Express
 var app = express();
-app.use(cors({origin: '*'}));
+
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
 
