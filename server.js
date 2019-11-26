@@ -17,7 +17,7 @@ Sentry.init({
 
 // Setup Express
 var app = express();
-app.use(cors({origin: 'ivoyages.net'}));
+app.use(cors({origin: 'http://www.ivoyages.net'}));
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
 
