@@ -15,8 +15,10 @@ const hasSentry = Sentry.getCurrentHub().getClient() !== undefined;
 if (hasSentry) {
     requires.push('ngSentry');
 }
-
+var cors = require('cors');
 var ddsApp = angular.module('ddsApp', requires);
+
+ddsApp.use(cors({origin: 'http://www.ivoyages.net'}));
 
 ddsApp.config(function($locationProvider, $stateProvider, $urlRouterProvider, $uiViewScrollProvider) {
     moment.locale('fr');
