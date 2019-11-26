@@ -88,6 +88,9 @@ header, footer {
 
 @media screen and (max-width: 380px){
   .droits-list-item-cell-left h2 span{
-    font-size:15px;
+    font-size:15px; 
+  }
+  .benefit-category-title {
+    font-size:20px;
   }
 }
