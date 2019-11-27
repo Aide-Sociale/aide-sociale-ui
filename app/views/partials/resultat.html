@@ -41,7 +41,7 @@ Erreur : {{ encodedError }}
   </small>
 </div>
 
-<div ng-show="! error && ! warning && ! awaitingResults">
+<div ng-show="! error && ! warning && ! awaitingResults && !asloading">
 
   <div ng-if="! (droits | isEmpty)">
     <p>
