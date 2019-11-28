@@ -74,8 +74,9 @@ Erreur : {{ encodedError }}
 
   <offline-result situation="situation" ng-show="droits | isNotEmpty"></offline-result>
 
-   <div class="frame-resultats" >
-  <div class="row additional-info-cta" ng-show="!asloading">
+  
+   <div class="frame-resultats" ng-show="!asloading && !awaitingResults">
+  <div class="row additional-info-cta" >
 
     <div class="col-sm-8">
       <p>
@@ -90,7 +91,6 @@ Erreur : {{ encodedError }}
 
   </div>
   </div>
-
   <div class="print-hidden">
     <div>
       <h4>Nous améliorons ce simulateur en continu, et
