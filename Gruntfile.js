@@ -81,6 +81,7 @@ module.exports = function (grunt) {
       options: {
         webpack: webpackDevelopmentConfig,
         https: true,
+        disableHostCheck:true,
         // TODO Parameterize via env for Docker / local
         host: '0.0.0.0',
         port: webpackDevServerPort,
