@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 
 var express = require('express');
+
+var fs = require('fs');
+var https = require('https');
+
 var morgan = require('morgan');
 var ludwigConfig = require('./ludwig/ui-config');
 var Sentry = require('@sentry/node');
@@ -14,8 +18,15 @@ Sentry.init({
     dsn: process.env.NODE_ENV === 'production' ? 'https://fde1d4c9741e4ef3a3416e4e88b61392@sentry.data.gouv.fr/17' : null,
 });
 
+
+
 // Setup Express
 var app = express();
+
+https.createServer({
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+}, app);
 
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
