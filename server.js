@@ -23,11 +23,6 @@ Sentry.init({
 // Setup Express
 var app = express();
 
-https.createServer({
-  key: fs.readFileSync('server.key'),
-  cert: fs.readFileSync('server.cert')
-}, app);
-
 // The request handler must be the first middleware on the app
 app.use(Sentry.Handlers.requestHandler());
 
@@ -49,7 +44,10 @@ if (app.get('env') == 'development') {
 }
 
 // Start server
-app.listen(port, function () {
+https.createServer({
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+}, app).listen(port, function () {
     console.log('Mes Aides server listening on port %d, in %s mode, expecting to be deployed on %s', port, app.get('env'), ludwigConfig.mesAidesRootUrl);
 });
 
