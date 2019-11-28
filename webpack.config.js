@@ -4,6 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var merge = require('webpack-merge');
+var https = require('https');
 var fs = require('fs');
 
 // https://webpack.js.org/configuration/dev-server/#devserver-port
@@ -173,15 +174,15 @@ module.exports = function(env, argv) {
 
     // When running with mode = development,
     // assets will be served via webpack-dev-server
-    if (argv.mode === 'development') {
+    /*if (argv.mode === 'development') {
         htmlWebpackPluginConfigs = htmlWebpackPluginConfigs.map(function(htmlWebpackPluginConfig) {
             return Object.assign(htmlWebpackPluginConfig, {
                 devServer: 'https://sd-124918.dedibox.fr:' + webpackDevServerPort
             });
         });
-    }
+    }*/
 
-    if (argv.mode === 'production') {
+    if (argv.mode === 'development') {
 
         plugins.push(new webpack.HashedModuleIdsPlugin());
 
