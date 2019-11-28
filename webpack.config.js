@@ -4,6 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var merge = require('webpack-merge');
+var fs = require('fs');
 
 // https://webpack.js.org/configuration/dev-server/#devserver-port
 var webpackDevServerPort = parseInt(process.env.WEBPACK_DEV_PORT) || 8080;
