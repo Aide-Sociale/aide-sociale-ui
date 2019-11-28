@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-    baseURL: 'https://163.172.111.68:9000',
-    openfiscaPublicURL: 'https://163.172.111.68:2000',
-    openfiscaTracerURL: 'https://163.172.111.68:3000',
+    baseURL: 'https://sd-124918.dedibox.fr:9000',
+    openfiscaPublicURL: 'https://sd-124918.dedibox.fr:2000',
+    openfiscaTracerURL: 'https://sd-124918.dedibox.fr:3000',
     teleserviceAccessTokens: {
         loiret_APA_test: 'token',
         loiret_APA: 'token',

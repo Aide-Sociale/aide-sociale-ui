@@ -165,7 +165,7 @@ module.exports = function(env, argv) {
     if (argv.mode === 'development') {
         htmlWebpackPluginConfigs = htmlWebpackPluginConfigs.map(function(htmlWebpackPluginConfig) {
             return Object.assign(htmlWebpackPluginConfig, {
-                devServer: 'http://163.172.111.68:' + webpackDevServerPort
+                devServer: 'https://sd-124918.dedibox.fr:' + webpackDevServerPort
             });
         });
     }
