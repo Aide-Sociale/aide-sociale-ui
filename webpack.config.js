@@ -88,12 +88,21 @@ var config = {
         ]
     },
     devServer: {
+	https: {
+	    key  : fs.readFileSync('server.key),
+	    cert : fs.readFileSync('server.crt'),
+	    ca   : fs.readFileSync('ca_bundle.crt')
+	},
+
         headers: {
             'Access-Control-Allow-Origin': '*',
         },
+
         contentBase: path.join(__dirname, 'dist'),
         port: webpackDevServerPort,
 	    disableHostCheck:true,
+    
+	
     },
     plugins: [
         new CopyWebpackPlugin([
