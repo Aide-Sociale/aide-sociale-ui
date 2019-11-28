@@ -135,7 +135,7 @@
   },
   "scripts": {
     "prestart": "npm run build && npm run stats",
-    "start": "NODE_ENV=production node server.js",
+    "start": "HTTPS=true NODE_ENV=production node server.js",
     "dev": "grunt serve",
     "sass": "grunt sass",
     "build": "NODE_ENV=production webpack --mode=production",
