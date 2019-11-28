@@ -89,7 +89,7 @@ var config = {
     },
     devServer: {
 	https: {
-	    key  : fs.readFileSync('server.key),
+	    key  : fs.readFileSync('server.key'),
 	    cert : fs.readFileSync('server.crt'),
 	    ca   : fs.readFileSync('ca_bundle.crt')
 	},
