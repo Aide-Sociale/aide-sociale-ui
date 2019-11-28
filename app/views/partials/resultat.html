@@ -74,13 +74,13 @@ Erreur : {{ encodedError }}
 
   <offline-result situation="situation" ng-show="droits | isNotEmpty"></offline-result>
 
-
-  <div class="row additional-info-cta">
+  <ym2-ressources-call-to-action class="ng-scope">
+  <div class="row additional-info-cta" ng-show="!asloading">
 
     <div class="col-sm-8">
       <p>
         <i class="fa fa-warning text-warning" aria-hidden="true"></i>
-        Contactez nous sur administration@aide-sociale.fr
+         Contactez nous sur administration@aide-sociale.fr
       </p>
     </div>
   
@@ -89,6 +89,7 @@ Erreur : {{ encodedError }}
     </div>
 
   </div>
+  </ym2-ressources-call-to-action>
 
   <div class="print-hidden">
     <div>
