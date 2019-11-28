@@ -10,7 +10,7 @@ var ludwigConfig = require('./ludwig/ui-config');
 var Sentry = require('@sentry/node');
 var port = process.env.PORT || 9000;
 
-ludwigConfig.mesAidesRootUrl = process.env.MES_AIDES_ROOT_URL || ('https://localhost:' + port);
+ludwigConfig.mesAidesRootUrl = process.env.MES_AIDES_ROOT_URL || ('http://localhost:' + port);
 
 Sentry.init({
     // Enable Sentry in production
