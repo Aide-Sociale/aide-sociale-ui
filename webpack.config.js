@@ -93,7 +93,8 @@ var config = {
         },
         contentBase: path.join(__dirname, 'dist'),
         port: webpackDevServerPort,
-	disableHostCheck:true    },
+	    disableHostCheck:true,
+    },
     plugins: [
         new CopyWebpackPlugin([
             { from: 'app/documents', to: 'documents/' },
