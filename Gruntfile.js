@@ -80,6 +80,7 @@ module.exports = function (grunt) {
     'webpack-dev-server': {
       options: {
         webpack: webpackDevelopmentConfig,
+        https: true,
         // TODO Parameterize via env for Docker / local
         host: '0.0.0.0',
         port: webpackDevServerPort,
