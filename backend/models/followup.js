@@ -77,7 +77,7 @@ FollowupSchema.methods.sendInitialEmail = function() {
         .then(render => {
             return sender.post('send', { version: 'v3.1' })
                 .request({ Messages: [{
-                    From: { Name: 'Équipe Mes Aides', Email: 'contact@mes-aides.gouv.fr'},
+                    From: { Name: 'Aide-sociale.fr', Email: 'contact@aide-sociale.fr'},
                     To: [{ Email: followup.email}],
                     Subject: render.subject,
                     TextPart: render.text,

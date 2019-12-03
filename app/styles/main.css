@@ -86,10 +86,11 @@ header, footer {
   color : #C43B3B ;
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 769px){
   .droits-list-item-cell-left h2 span{
-    font-size:15px; 
+    font-size:13px; 
   }
+  span.montant { font-size:12px;}
   .benefit-category-title {
     font-size:20px;
   }
